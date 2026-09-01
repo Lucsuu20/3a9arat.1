@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3A9ARAT - explore map</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/3A9ARAT (1)-Photoroom.png">
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <a  class="logo">3A9ARAT</a>
+        </div>
+
+        <nav>
+
+            <button class="navbtn" type="button" id="home-navbtn">
+                Home
+            </button>
+
+            <button class="navbtn" type="button" id="searchproperty-navbtn">
+                Search Property
+            </button>
+
+            <button class="navbtn" type="button" id="map-navbtn">
+                Map
+            </button>
+
+            <hr>
+
+            <button id="settings" type="button">
+                <img src="/img/setting.png" alt="Settings" class="settings-img">
+            </button>
+
+            <a id="sign" type="button" href="signin.html">
+                Sign in
+            </a>
+
+        </nav>
+
+    </header>
+
+    <div class="space" style="height:70px;"></div>
+    <div class="search-bar-map">
+        <input type="text" placeholder="search">
+        <button id="search-btn"><img src="/img/search-interface-symbol (1).png" alt="search" id="map-search-img"></button>
+        <button id="saved"><img src="/img/bookmark.png" alt="saved" id="map-saved-img"></button>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14468948.468721474!2d-8.980759086150421!3d27.703138177240294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7e8a6a28037bd1%3A0x7140bee3abd7f8a2!2sAlgeria!5e0!3m2!1sen!2sdz!4v1787687663781!5m2!1sen!2sdz"
+      style="border:0;" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="map"></iframe>
+      <div class="settings-menu" >
+        <nav>
+            <h1>Settings</h1>
+            <button id="exit-settings-menu"><img src="/img/exit.png" alt="exit" ></button>
+        </nav>
+       
+        <hr>
+        <nav>
+        <label for="language">choose language</label>
+        <select name="language" id="language">
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+            <option value="fr">French</option>
+        </select>
+        </nav>
+        <nav>
+        <label for="display">Display</label>
+        <select name="display" id="display">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+        </nav>
+        <hr>
+        <div class="pfp-settings"><img src="/img/hiii hello.jpg" alt="Profile Picture">
+            <p>Account</p>
+        </div>
+        
+        <h3>
+            switch job
+        </h3>
+        <nav id="settings-job-nav">
+            <button>seller</button>
+            <button>consumer</button>
+        </nav>
+        <button id="log-out">Log out</button>
+        
+    </div>
+   <script src="./js/pages.js"></script> 
+</body>
+</html>

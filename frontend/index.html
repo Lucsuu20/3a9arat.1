@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3A9ARAT - Find Your Property</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/3A9ARAT (1)-Photoroom.png">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            <a  class="logo">3A9ARAT</a>
+        </div>
+
+       <nav>
+
+            <button class="navbtn" type="button" id="home-navbtn">
+                Home
+            </button>
+
+            <button class="navbtn" type="button" id="searchproperty-navbtn">
+                Search Property
+            </button>
+
+            <button class="navbtn" type="button" id="map-navbtn">
+                Map
+            </button>
+
+            <hr>
+
+            <button id="settings" type="button">
+                <img src="/img/setting.png" alt="Settings" class="settings-img">
+            </button>
+
+            <a id="sign" type="button" href="signin.html">
+                Sign in
+            </a>
+
+        </nav>
+
+
+    </header>
+
+
+    <!-- ================= HERO / SEARCH ================= -->
+
+    <main>
+
+        <section class="content">
+
+            <form id="property-search">
+
+                <nav id="property-purpose">
+
+                    <button id="buy" type="button" class="purpose">
+                        <img src="/img/real-estate.png" alt="buy" id="buyImg">
+                        Buy
+                    </button>
+
+                    <button id="rent" type="button" class="purpose">
+                        <img src="/img/rent.png" alt="rent" id="rentImg">
+                        Rent
+                    </button>
+
+                </nav>
+
+
+                <!-- Wilaya -->
+
+                <div>
+                    <label for="wilaya">
+                        Wilaya
+                    </label>
+
+                    <select id="wilaya">
+
+                        <option value="">
+                            All Wilayas
+                        </option>
+
+                        <option value="algiers">
+                            Algiers
+                        </option>
+
+                        <option value="oran">
+                            Oran
+                        </option>
+
+                        <option value="blida">
+                            Blida
+                        </option>
+
+                    </select>
+                </div>
+
+
+                <!-- Property type -->
+
+                <div>
+
+                    <label for="property-type">
+                        Property type
+                    </label>
+
+                    <select id="property-type">
+
+                        <option value="">
+                            All types
+                        </option>
+
+                        <option value="apartment">
+                            Apartment
+                        </option>
+
+                        <option value="house">
+                            House
+                        </option>
+
+                        <option value="villa">
+                            Villa
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Price -->
+
+                <div>
+
+                    <label for="price">
+                        Maximum price
+                    </label>
+
+                    <input
+                        type="number"
+                        id="price"
+                        placeholder="Price in DZD"
+                    >
+
+                </div>
+
+
+                <!-- Area -->
+
+                <div>
+
+                    <label for="area">
+                        Minimum area
+                    </label>
+
+                    <input
+                        type="number"
+                        id="area"
+                        placeholder="m²"
+                    >
+
+                </div>
+
+
+                <!-- Search -->
+
+                <button type="submit">
+                    Search
+                </button>
+
+            </form>
+
+
+            <!-- Logo / Hero title -->
+
+            <div class="hero-logo">
+
+                <h1 id="big">
+                    <span>3</span>
+                    <span>A</span>
+                    <span>9</span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>A</span>
+                    <span>T</span>
+                </h1>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TAGLINE ================= -->
+
+        <h1 class="tagline">
+            All your needs in one app
+        </h1>
+
+
+        <!-- ================= WHY 3A9ARAT ================= -->
+
+        <section class="content">
+
+            <div class="why-us">
+
+                <h2>
+                    Why 3A9ARAT?
+                </h2>
+
+                <p>
+                    Here you can buy and sell property in Algeria.
+                </p>
+
+
+                <div class="features">
+
+                    <article>
+                        <h3>
+                            Smart Search
+                        </h3>
+
+                        <p>
+                            Find properties using multiple filters.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>
+                            Explore Properties
+                        </h3>
+
+                        <p>
+                            Browse properties for rent or sale.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>
+                            Explore the Map
+                        </h3>
+
+                        <p>
+                            Discover properties based on their location.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h3>
+                            Compare Properties
+                        </h3>
+
+                        <p>
+                            Compare properties based on their details.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <div class="icon">
+                <img src="/img/3A9ARAT (1)-Photoroom.png" alt="logo">
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <h2>
+                3A9ARAT
+            </h2>
+
+            <p>
+                Find, compare and discover properties
+                across Algeria.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+
+            <!-- Explore -->
+
+            <div>
+
+                <h3>
+                    Explore
+                </h3>
+
+                <a href="#">
+                    Buy
+                </a>
+
+                <a href="#">
+                    Rent
+                </a>
+
+                <a href="#">
+                    Properties
+                </a>
+
+                <a href="#">
+                    Map
+                </a>
+
+            </div>
+
+
+            <!-- Owners -->
+
+            <div>
+
+                <h3>
+                    For Owners
+                </h3>
+
+                <a href="#">
+                    Add Property
+                </a>
+
+                <a href="#">
+                    Dashboard
+                </a>
+
+                <a href="#">
+                    Help
+                </a>
+
+            </div>
+
+
+            <!-- Company -->
+
+            <div>
+
+                <h3>
+                    Company
+                </h3>
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+            </div>
+
+
+            <!-- Social -->
+
+            <div>
+
+                <h3>
+                    Follow us
+                </h3>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    Facebook
+                </a>
+
+                <a href="#">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 3A9ARAT. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+      <div class="settings-menu">
+        <nav>
+            <h1>Settings</h1>
+            <button id="exit-settings-menu"><img src="/img/exit.png" alt="exit" ></button>
+        </nav>
+       
+        <hr>
+        <nav>
+        <label for="language">choose language</label>
+        <select name="language" id="language">
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+            <option value="fr">French</option>
+        </select>
+        </nav>
+        <nav>
+        <label for="display">Display</label>
+        <select name="display" id="display">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+        </nav>
+        <hr>
+        <div class="pfp-settings"><img src="/img/hiii hello.jpg" alt="Profile Picture">
+            <p>Account</p>
+        </div>
+        
+        <h3>
+            switch job
+        </h3>
+        <nav id="settings-job-nav">
+            <button>seller</button>
+            <button>consumer</button>
+        </nav>
+        <button id="log-out">Log out</button>
+        
+    </div>
+<script src="./js/pages.js"></script>
+</body>
+
+</html>

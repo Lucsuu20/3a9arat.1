@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3A9ARAT - search property</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/3A9ARAT (1)-Photoroom.png">
+</head>
+<body>
+    
+    <header>
+
+        <div class="logo">
+            <a  class="logo">3A9ARAT</a>
+        </div>
+
+         <nav>
+
+            <button class="navbtn" type="button" id="home-navbtn">
+                Home
+            </button>
+
+            <button class="navbtn" type="button" id="searchproperty-navbtn">
+                Search Property
+            </button>
+
+            <button class="navbtn" type="button" id="map-navbtn">
+                Map
+            </button>
+
+            <hr>
+
+            <button id="settings" type="button">
+                <img src="/img/setting.png" alt="Settings" class="settings-img">
+            </button>
+
+            <a id="sign" type="button" href="signin.html">
+                Sign in
+            </a>
+
+        </nav>
+
+
+    </header>
+    <div class="space" style="height:100px;"></div>
+    <div class="search-space">
+        <div class="filtering">
+            <ul>
+                <li>
+                    <h3> Search and filter</h3>
+                </li>
+            </ul>
+            <hr>
+            <p>filter by wilaya</p>
+            <p>recomended cities</p>
+            <nav class="filter-nav">
+                <button class="wilaya" value="algiers">
+                    Algiers
+                </button>
+                <button class="wilaya" value="oran">
+                    Oran
+                </button>
+                <button class="wilaya" value="constantine">
+                    Constantine
+                </button>
+                <button class="wilaya" value="annaba">
+                    Annaba
+                </button>
+                <button class="wilaya" value="telemcen">
+                    Telemcen
+                </button>
+                <button class="wilaya" value="blida">
+                    Blida
+                </button>
+            </nav>
+            <ul>
+                <li>
+                    <h3>Or choose manually</h3>
+                </li>
+                <li>
+                    <label for="wilaya">Wilaya</label>
+                    <select name="wilaya" id="wilaya">
+                        <option value="algiers">Algiers</option>
+                        <option value="oran">Oran</option>
+                        <option value="constantine">Constantine</option>
+                        <option value="annaba">Annaba</option>
+                        <option value="telemcen">Telemcen</option>
+                        <option value="blida">Blida</option>
+                    </select>
+            </ul>
+            <ul>
+                <li>
+                    <h3>
+                        Sort
+                    </h3>
+                    
+                </li>
+                <li>
+                    <label for="sort">Sort by:</label>
+                    <select name="sort" id="sort">
+                        <option value="recomended">Recomended</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="newest">Newest</option>
+                        <option value="oldest">oldest</option>
+                        <option value="Title">Title(a-z)</option>
+                    </select>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3>Purpose</h3>
+                </li>
+                <li>
+                    <label for="Purpose">Purpose of property</label>
+                    <select name="purpose" id="purpose">
+                        <option value="">Both</option>
+                        <option value="sale">buy</option>
+                        <option value="rent">rent</option>
+                    </select>
+                </li>
+            </ul>
+            <button id="clear-filter" >
+                Clear filters
+            </button>
+
+        </div>
+        <div class="othspace">
+        <div class="search-bar-div">
+            <input type="text" placeholder="search" id="search-property">
+        </div>
+        <div class="property-space" id="property_space">
+            <div class="property-card" id="property-template">
+                <img src="/img/download (15).jpg" alt="property" class="property-img" id="property_img">
+                <nav class="property-card-info">
+                    <ul>
+                        <li class="property-wilaya">Oran</li>
+                        <li class="property-purpose">For Rent</li>
+                    </ul>
+                    
+                </nav>
+                <hr>
+                <h3 class="property-card-title property-title" >
+                    Charming Queen Anne House
+                </h3>
+                <p class="property-card-description property-desc">      
+                    F3 house near the beach and the city center, with a beautiful view of the sea and the mountains.
+                </p>
+                <hr>
+                <nav class="property-card-price">
+                    <ul>
+                        <li id="property-price" class="property-price">100,000 DZD</li>
+                    </ul>
+                    <p>></p>
+                </nav>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+      <div class="settings-menu" >
+        <nav>
+            <h1>Settings</h1>
+            <button id="exit-settings-menu"><img src="/img/exit.png" alt="exit" ></button>
+        </nav>
+       
+        <hr>
+        <nav>
+        <label for="language">choose language</label>
+        <select name="language" id="language">
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+            <option value="fr">French</option>
+        </select>
+        </nav>
+        <nav>
+        <label for="display">Display</label>
+        <select name="display" id="display">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+        </nav>
+        <hr>
+        <div class="pfp-settings"><img src="/img/hiii hello.jpg" alt="Profile Picture">
+            <p>Account</p>
+        </div>
+        
+        <h3>
+            switch job
+        </h3>
+        <nav id="settings-job-nav">
+            <button>seller</button>
+            <button>consumer</button>
+        </nav>
+        <button id="log-out">Log out</button>
+        
+    </div>
+    <script src="./js/pages.js"></script>
+    <script src="./js/property.js"></script>
+</body>
+</html>
