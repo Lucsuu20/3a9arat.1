@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3A9ARAT - Find Your Property</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <div class="logo">
+            <a href="index.html">3A9ARAT</a>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Buy</a>
+            <a href="#">Rent</a>
+            <a href="#">Map</a>
+        </nav>
+
+        <div class="header-actions">
+            <button id="login">Log in</button>
+            <button id="settings">Settings</button>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+            <div class="hero-text">
+                <h1>Find the right property in Algeria.</h1>
+
+                <p>
+                    Search, compare and discover properties for rent or sale
+                    in one place.
+                </p>
+            </div>
+
+            <!-- Main search -->
+
+            <form class="search-box" id="property-search">
+
+                <div>
+                    <label for="wilaya">Wilaya</label>
+
+                    <select id="wilaya">
+                        <option value="">All Wilayas</option>
+                        <option value="algiers">Algiers</option>
+                        <option value="oran">Oran</option>
+                        <option value="blida">Blida</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="purpose">Purpose</label>
+
+                    <select id="purpose">
+                        <option value="">Buy or Rent</option>
+                        <option value="buy">Buy</option>
+                        <option value="rent">Rent</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="price">Maximum price</label>
+
+                    <input
+                        type="number"
+                        id="price"
+                        placeholder="Price in DZD"
+                    >
+                </div>
+
+                <div>
+                    <label for="area">Minimum area</label>
+
+                    <input
+                        type="number"
+                        id="area"
+                        placeholder="m²"
+                    >
+                </div>
+
+                <button type="submit">
+                    Search
+                </button>
+
+            </form>
+
+            <p>
+                Or
+                <a href="#">explore properties on the map</a>
+            </p>
+
+        </section>
+
+
+        <!-- ================= WHY 3A9ARAT ================= -->
+
+        <section class="why-us">
+
+            <h2>Why 3A9ARAT?</h2>
+
+            <p>
+                Finding a property shouldn't mean searching through
+                hundreds of scattered listings.
+            </p>
+
+            <div class="advantages">
+
+                <article>
+                    <h3>Search smarter</h3>
+
+                    <p>
+                        Find properties using multiple filters instead
+                        of searching manually.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Everything in one place</h3>
+
+                    <p>
+                        Browse properties from different locations
+                        through one platform.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Compare easily</h3>
+
+                    <p>
+                        Compare properties based on price, area,
+                        location and other details.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features">
+
+            <h2>What can you do?</h2>
+
+            <div class="feature-list">
+
+                <article class="feature">
+                    <h3>🔎 Smart Search</h3>
+
+                    <p>
+                        Filter properties by Wilaya, price, area,
+                        property type and more.
+                    </p>
+                </article>
+
+                <article class="feature">
+                    <h3>🗺️ Explore the Map</h3>
+
+                    <p>
+                        Discover properties directly from the map
+                        and explore their locations.
+                    </p>
+                </article>
+
+                <article class="feature">
+                    <h3>📊 Compare Properties</h3>
+
+                    <p>
+                        Compare the properties that match your needs
+                        and organize your results.
+                    </p>
+                </article>
+
+                <article class="feature">
+                    <h3>🏠 Sell or Rent</h3>
+
+                    <p>
+                        Add your property and make it visible to
+                        people looking for a place.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURED PROPERTIES ================= -->
+
+        <section class="featured">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Featured Properties</h2>
+
+                    <p>
+                        Discover some of the properties available
+                        on 3A9ARAT.
+                    </p>
+                </div>
+
+                <a href="#">View all properties →</a>
+            </div>
+
+
+            <div class="property-list">
+
+                <article class="property-card">
+
+                    <div class="property-image">
+                        <img
+                            src="assets/property1.jpg"
+                            alt="Apartment in Algiers"
+                        >
+                    </div>
+
+                    <div class="property-info">
+
+                        <h3>Modern Apartment</h3>
+
+                        <p>Algiers</p>
+
+                        <strong>80,000 DZD</strong>
+
+                        <p>
+                            3 rooms · 85 m²
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="property-card">
+
+                    <div class="property-image">
+                        <img
+                            src="assets/property2.jpg"
+                            alt="House in Oran"
+                        >
+                    </div>
+
+                    <div class="property-info">
+
+                        <h3>Family House</h3>
+
+                        <p>Oran</p>
+
+                        <strong>250,000 DZD</strong>
+
+                        <p>
+                            5 rooms · 180 m²
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="property-card">
+
+                    <div class="property-image">
+                        <img
+                            src="assets/property3.jpg"
+                            alt="Commercial property in Blida"
+                        >
+                    </div>
+
+                    <div class="property-info">
+
+                        <h3>Commercial Space</h3>
+
+                        <p>Blida</p>
+
+                        <strong>60,000 DZD</strong>
+
+                        <p>
+                            1 room · 70 m²
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="how-it-works">
+
+            <h2>How does 3A9ARAT work?</h2>
+
+            <div class="steps">
+
+                <article>
+                    <span>01</span>
+
+                    <h3>Search</h3>
+
+                    <p>
+                        Enter the location and requirements
+                        you're looking for.
+                    </p>
+                </article>
+
+                <article>
+                    <span>02</span>
+
+                    <h3>Filter & Compare</h3>
+
+                    <p>
+                        Find matching properties and compare
+                        their details.
+                    </p>
+                </article>
+
+                <article>
+                    <span>03</span>
+
+                    <h3>Contact</h3>
+
+                    <p>
+                        Choose a property and contact its owner.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SMART SEARCH ================= -->
+
+        <section class="smart-search">
+
+            <div>
+
+                <h2>Search smarter, not harder.</h2>
+
+                <p>
+                    Enter your requirements and let 3A9ARAT
+                    organize the properties that match them.
+                </p>
+
+                <ul>
+                    <li>Choose one or multiple Wilayas</li>
+                    <li>Set your preferred price</li>
+                    <li>Choose the minimum area</li>
+                    <li>Select property type</li>
+                    <li>Compare matching properties</li>
+                </ul>
+
+                <button>
+                    Try Smart Search
+                </button>
+
+            </div>
+
+            <div class="search-preview">
+                <!-- Later: preview of the smart search table -->
+            </div>
+
+        </section>
+
+
+        <!-- ================= FOR OWNERS ================= -->
+
+        <section class="for-owners">
+
+            <div>
+
+                <h2>Have a property?</h2>
+
+                <p>
+                    Put your property where people are looking.
+                    Add your home, apartment or commercial space
+                    to 3A9ARAT.
+                </p>
+
+                <button id="add-property">
+                    Add your property
+                </button>
+
+            </div>
+
+            <div class="owner-steps">
+
+                <article>
+                    <span>01</span>
+                    <p>Add your property information.</p>
+                </article>
+
+                <article>
+                    <span>02</span>
+                    <p>Add images and location.</p>
+                </article>
+
+                <article>
+                    <span>03</span>
+                    <p>Accept the publishing conditions.</p>
+                </article>
+
+                <article>
+                    <span>04</span>
+                    <p>Publish and receive inquiries.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TRUST ================= -->
+
+        <section class="trust">
+
+            <h2>Built around trust.</h2>
+
+            <p>
+                We want property information and user reviews
+                to be as reliable as possible.
+            </p>
+
+            <div class="trust-features">
+
+                <article>
+                    <h3>Verified information</h3>
+
+                    <p>
+                        Property owners must provide the required
+                        information before publishing.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>User reviews</h3>
+
+                    <p>
+                        Reviews are designed to come from genuine
+                        interactions rather than anonymous users.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Report a property</h3>
+
+                    <p>
+                        Users can report suspicious or misleading
+                        property listings.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FINAL CTA ================= -->
+
+        <section class="cta">
+
+            <h2>Ready to find your next property?</h2>
+
+            <p>
+                Start exploring properties across Algeria.
+            </p>
+
+            <button>
+                Explore Properties
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <h2>3A9ARAT</h2>
+
+            <p>
+                Find, compare and discover properties
+                across Algeria.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <div>
+                <h3>Explore</h3>
+
+                <a href="#">Buy</a>
+                <a href="#">Rent</a>
+                <a href="#">Properties</a>
+                <a href="#">Map</a>
+            </div>
+
+
+            <div>
+                <h3>For Owners</h3>
+
+                <a href="#">Add Property</a>
+                <a href="#">Dashboard</a>
+                <a href="#">Help</a>
+            </div>
+
+
+            <div>
+                <h3>Company</h3>
+
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+
+
+            <div>
+                <h3>Follow us</h3>
+
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 3A9ARAT. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
