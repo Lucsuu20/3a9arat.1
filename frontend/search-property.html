@@ -18,15 +18,15 @@
          <nav>
 
             <button class="navbtn" type="button" id="home-navbtn">
-                Home
+                <span data-i18n="home">Home</span>
             </button>
 
             <button class="navbtn" type="button" id="searchproperty-navbtn">
-                Search Property
+                <span data-i18n="searchProperty">Search Property</span>
             </button>
 
             <button class="navbtn" type="button" id="map-navbtn">
-                Map
+                <span data-i18n="map">Map</span>
             </button>
 
             <hr>
@@ -36,7 +36,7 @@
             </button>
 
             <a id="sign" type="button" href="signin.html">
-                Sign in
+                <span data-i18n="signIn">Sign in</span>
             </a>
 
         </nav>
@@ -48,103 +48,103 @@
         <div class="filtering">
             <ul>
                 <li>
-                    <h3> Search and filter</h3>
+                    <h3 data-i18n="searchAndFilter"> Search and filter</h3>
                 </li>
             </ul>
             <hr>
-            <p>filter by wilaya</p>
-            <p>recomended cities</p>
+            <p data-i18n="filterWilaya">filter by wilaya</p>
+            <p data-i18n="recommendedCities">recomended cities</p>
             <nav class="filter-nav">
                 <button class="wilaya" value="algiers">
-                    Algiers
+                    <span data-i18n="algiers">Algiers</span>
                 </button>
                 <button class="wilaya" value="oran">
-                    Oran
+                    <span data-i18n="oran">Oran</span>
                 </button>
                 <button class="wilaya" value="constantine">
-                    Constantine
+                    <span data-i18n="constantine">Constantine</span>
                 </button>
                 <button class="wilaya" value="annaba">
-                    Annaba
+                    <span data-i18n="annaba">Annaba</span>
                 </button>
                 <button class="wilaya" value="telemcen">
-                    Telemcen
+                    <span data-i18n="telemcen">Telemcen</span>
                 </button>
                 <button class="wilaya" value="blida">
-                    Blida
+                    <span data-i18n="blida">Blida</span>
                 </button>
             </nav>
             <ul>
                 <li>
-                    <h3>Or choose manually</h3>
+                    <h3 data-i18n="chooseManually">Or choose manually</h3>
                 </li>
                 <li>
-                    <label for="wilaya">Wilaya</label>
+                    <label for="wilaya" data-i18n="wilaya">Wilaya</label>
                     <select name="wilaya" id="wilaya">
-                        <option value="algiers">Algiers</option>
-                        <option value="oran">Oran</option>
-                        <option value="constantine">Constantine</option>
-                        <option value="annaba">Annaba</option>
-                        <option value="telemcen">Telemcen</option>
-                        <option value="blida">Blida</option>
+                        <option value="algiers" data-i18n="algiers">Algiers</option>
+                        <option value="oran" data-i18n="oran">Oran</option>
+                        <option value="constantine" data-i18n="constantine">Constantine</option>
+                        <option value="annaba" data-i18n="annaba">Annaba</option>
+                        <option value="telemcen" data-i18n="telemcen">Telemcen</option>
+                        <option value="blida" data-i18n="blida">Blida</option>
                     </select>
             </ul>
             <ul>
                 <li>
                     <h3>
-                        Sort
+                        <span data-i18n="sort">Sort</span>
                     </h3>
                     
                 </li>
                 <li>
-                    <label for="sort">Sort by:</label>
+                    <label for="sort" data-i18n="sortBy">Sort by:</label>
                     <select name="sort" id="sort">
-                        <option value="recomended">Recomended</option>
-                        <option value="price-asc">Price: Low to High</option>
-                        <option value="price-desc">Price: High to Low</option>
-                        <option value="newest">Newest</option>
-                        <option value="oldest">oldest</option>
-                        <option value="Title">Title(a-z)</option>
+                        <option value="recomended" data-i18n="recommended">Recomended</option>
+                        <option value="price-asc" data-i18n="lowHigh">Price: Low to High</option>
+                        <option value="price-desc" data-i18n="highLow">Price: High to Low</option>
+                        <option value="newest" data-i18n="newest">Newest</option>
+                        <option value="oldest" data-i18n="oldest">oldest</option>
+                        <option value="Title" data-i18n="titleAz">Title(a-z)</option>
                     </select>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <h3>Purpose</h3>
+                    <h3 data-i18n="purpose">Purpose</h3>
                 </li>
                 <li>
-                    <label for="Purpose">Purpose of property</label>
+                    <label for="Purpose" data-i18n="purposeProperty">Purpose of property</label>
                     <select name="purpose" id="purpose">
-                        <option value="">Both</option>
-                        <option value="sale">buy</option>
-                        <option value="rent">rent</option>
+                        <option value="" data-i18n="both">Both</option>
+                        <option value="sale" data-i18n="buy">buy</option>
+                        <option value="rent" data-i18n="rent">rent</option>
                     </select>
                 </li>
             </ul>
             <button id="clear-filter" >
-                Clear filters
+                <span data-i18n="clearFilters">Clear filters</span>
             </button>
 
         </div>
         <div class="othspace">
         <div class="search-bar-div">
-            <input type="text" placeholder="search" id="search-property">
+            <input type="text" placeholder="search" data-i18n-placeholder="search" id="search-property">
         </div>
         <div class="property-space" id="property_space">
             <div class="property-card" id="property-template">
                 <img src="/img/download (15).jpg" alt="property" class="property-img" id="property_img">
                 <nav class="property-card-info">
                     <ul>
-                        <li class="property-wilaya">Oran</li>
-                        <li class="property-purpose">For Rent</li>
+                        <li class="property-wilaya" data-i18n="oran">Oran</li>
+                        <li class="property-purpose" data-i18n="forRent">For Rent</li>
                     </ul>
                     
                 </nav>
                 <hr>
-                <h3 class="property-card-title property-title" >
+                <h3 class="property-card-title property-title" data-i18n="charmingHouse">
                     Charming Queen Anne House
                 </h3>
-                <p class="property-card-description property-desc">      
+                <p class="property-card-description property-desc" data-i18n="houseDescription">
                     F3 house near the beach and the city center, with a beautiful view of the sea and the mountains.
                 </p>
                 <hr>
@@ -161,41 +161,42 @@
     </div>
       <div class="settings-menu" >
         <nav>
-            <h1>Settings</h1>
+            <h1 data-i18n="settings">Settings</h1>
             <button id="exit-settings-menu"><img src="/img/exit.png" alt="exit" ></button>
         </nav>
        
         <hr>
         <nav>
-        <label for="language">choose language</label>
+        <label for="language" data-i18n="chooseLanguage">choose language</label>
         <select name="language" id="language">
-            <option value="en">English</option>
-            <option value="ar">Arabic</option>
-            <option value="fr">French</option>
+            <option value="en" data-i18n="english">English</option>
+            <option value="ar" data-i18n="arabic">Arabic</option>
+            <option value="fr" data-i18n="french">French</option>
         </select>
         </nav>
         <nav>
-        <label for="display">Display</label>
+        <label for="display" data-i18n="display">Display</label>
         <select name="display" id="display">
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
+            <option value="light" data-i18n="light">Light</option>
+            <option value="dark" data-i18n="dark">Dark</option>
         </select>
         </nav>
         <hr>
         <div class="pfp-settings"><img src="/img/hiii hello.jpg" alt="Profile Picture">
-            <p>Account</p>
+            <p data-i18n="account">Account</p>
         </div>
         
         <h3>
-            switch job
+            <span data-i18n="switchJob">switch job</span>
         </h3>
         <nav id="settings-job-nav">
-            <button>seller</button>
-            <button>consumer</button>
+            <button data-i18n="seller">seller</button>
+            <button data-i18n="consumer">consumer</button>
         </nav>
-        <button id="log-out">Log out</button>
+        <button id="log-out" data-i18n="logOut">Log out</button>
         
     </div>
+    <script src="./js/data.js"></script>
     <script src="./js/pages.js"></script>
     <script src="./js/property.js"></script>
 </body>

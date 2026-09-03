@@ -17,15 +17,15 @@
        <nav>
 
             <button class="navbtn" type="button" id="home-navbtn">
-                Home
+                <span data-i18n="home">Home</span>
             </button>
 
             <button class="navbtn" type="button" id="searchproperty-navbtn">
-                Search Property
+                <span data-i18n="searchProperty">Search Property</span>
             </button>
 
             <button class="navbtn" type="button" id="map-navbtn">
-                Map
+                <span data-i18n="map">Map</span>
             </button>
 
             <hr>
@@ -35,7 +35,7 @@
             </button>
 
             <a id="sign" type="button" href="signin.html">
-                Sign in
+                <span data-i18n="signIn">Sign in</span>
             </a>
 
         </nav>
@@ -45,14 +45,14 @@
     <div class="space" style="height: 100px;"></div>
     <main class="property-main">
         <div class="property-main-left">
-            <h1>Charming Queen Anne House</h1>
-            <p> F3 house near the beach and the city center, with a beautiful view of the sea and the mountains.</p>
+            <h1 id="prpTitle">Charming Queen Anne House</h1>
+            <p id="prpDescription">F3 house near the beach and the city center, with a beautiful view of the sea and the mountains.</p>
             <figure>
-                <img src="/img/Tour a Charming Queen Anne House in Defiance, Ohio — Photos _ Apartment Therapy.jpg" alt="the house">
+                <img src="/img/Tour a Charming Queen Anne House in Defiance, Ohio — Photos _ Apartment Therapy.jpg" alt="the house" id="prpHouseImg">
 
             </figure>
-            <nav><img src="/img/Tour a Charming Queen Anne House in Defiance, Ohio — Photos _ Apartment Therapy.jpg" alt="hose" style="width: 50px; height:auto;"></nav>
-            <h3>Ratings</h3>
+            <nav><img src="/img/Tour a Charming Queen Anne House in Defiance, Ohio — Photos _ Apartment Therapy.jpg" alt="hose" id="prpHouseImgSmall" style="width: 50px; height:auto;"></nav>
+            <h3 id="prpRatings">Ratings</h3>
             <div class="rating-display">
 
             <span class="star filled">★</span>
@@ -64,59 +64,63 @@
         </div>
         </div>
         <div class="property-main-right">
-            <h3>Our location in maps</h3>
+            <h3 data-i18n="locationMaps">Our location in maps</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d947.7065295225154!2d6.615152032879264!3d36.96940993151309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shouse%20for%20rent%20in%20algeria!5e0!3m2!1sen!2sdz!4v1787853767949!5m2!1sen!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             <button id="enroll-property">
-                enroll now!
+                <span data-i18n="enroll">enroll now!</span>
                 <div class="underline"></div>
             </button>
             <nav class="property-info">
-                <h3>Property informations</h3>
+                <h3 data-i18n="propertyInfo">Property informations</h3>
                 <ul>
-                    <li>Oran</li>
-                    <li>For Rent</li>
-                    <li>100,000 DZD</li>
+                    <li id="prpInfo1">Oran</li>
+                    <li id="prpInfo2">vila</li>
+                    <li id="prpInfo3">For Rent</li>
+                    <li id="prpInfo4">100 m2</li>
+                    <li id="prpInfo5">100,000 DZD</li>
                 </ul>
             </nav>
         </div>
     </main>
     <div class="settings-menu" >
         <nav>
-            <h1>Settings</h1>
+            <h1 data-i18n="settings">Settings</h1>
             <button id="exit-settings-menu"><img src="/img/exit.png" alt="exit" ></button>
         </nav>
        
         <hr>
         <nav>
-        <label for="language">choose language</label>
+        <label for="language" data-i18n="chooseLanguage">choose language</label>
         <select name="language" id="language">
-            <option value="en">English</option>
-            <option value="ar">Arabic</option>
-            <option value="fr">French</option>
+            <option value="en" data-i18n="english">English</option>
+            <option value="ar" data-i18n="arabic">Arabic</option>
+            <option value="fr" data-i18n="french">French</option>
         </select>
         </nav>
         <nav>
-        <label for="display">Display</label>
+        <label for="display" data-i18n="display">Display</label>
         <select name="display" id="display">
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
+            <option value="light" data-i18n="light">Light</option>
+            <option value="dark" data-i18n="dark">Dark</option>
         </select>
         </nav>
         <hr>
         <div class="pfp-settings"><img src="/img/hiii hello.jpg" alt="Profile Picture">
-            <p>Account</p>
+            <p data-i18n="account">Account</p>
         </div>
         
         <h3>
-            switch job
+            <span data-i18n="switchJob">switch job</span>
         </h3>
         <nav id="settings-job-nav">
-            <button>seller</button>
-            <button>consumer</button>
+            <button data-i18n="seller">seller</button>
+            <button data-i18n="consumer">consumer</button>
         </nav>
-        <button id="log-out">Log out</button>
+        <button id="log-out" data-i18n="logOut">Log out</button>
         
     </div>
+    <script src="./js/data.js"></script>
+    <script src="./js/Property-page.js"></script>
     <script src="./js/pages.js"></script> 
 </body>
 </html>
