@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "username": "karim_orani",
+    "email": "karim.orani@gmail.com",
+    "phone_number": "+213550123456",
+    "job": "seller"
+  },
+  {
+    "id": 2,
+    "username": "amina_blida",
+    "email": "amina.blida88@gmail.com",
+    "phone_number": "+213661987654",
+    "job": "consumer"
+  },
+  {
+    "id": 3,
+    "username": "sofiane_hydra",
+    "email": "s.hydra.realty@gmail.com",
+    "phone_number": "+213770112233",
+    "job": "seller"
+  },
+  {
+    "id": 4,
+    "username": "yacine_dz",
+    "email": "yacine.dev@gmail.com",
+    "phone_number": "+213541889900",
+    "job": "consumer"
+  },
+  {
+    "id": 5,
+    "username": "meriem_immo",
+    "email": "meriem.tlemcen.immo@gmail.com",
+    "phone_number": "+213655443322",
+    "job": "seller"
+  },
+  {
+    "id": 6,
+    "username": "faycal_constantine",
+    "email": "faycal.constantine@gmail.com",
+    "phone_number": "+213799665544",
+    "job": "consumer"
+  },
+  {
+    "id": 7,
+    "username": "samir_promoteur",
+    "email": "samir.promotion@gmail.com",
+    "phone_number": "+213552334455",
+    "job": "seller"
+  },
+  {
+    "id": 8,
+    "username": "nour_elhouda",
+    "email": "nour.elhouda99@gmail.com",
+    "phone_number": "+213663778899",
+    "job": "consumer"
+  },
+  {
+    "id": 9,
+    "username": "omar_setif",
+    "email": "omar.setif.realestate@gmail.com",
+    "phone_number": "+213771224466",
+    "job": "seller"
+  },
+  {
+    "id": 10,
+    "username": "lydia_kabylie",
+    "email": "lydia.tizi@gmail.com",
+    "phone_number": "+213549113355",
+    "job": "consumer"
+  },
+  {
+    "id": 11,
+    "username": "mehdi_annaba",
+    "email": "mehdi.annaba.broker@gmail.com",
+    "phone_number": "+213670998877",
+    "job": "seller"
+  },
+  {
+    "id": 12,
+    "username": "chafik_mosta",
+    "email": "chafik.mosta@gmail.com",
+    "phone_number": "+213780554433",
+    "job": "consumer"
+  },
+  {
+    "id": 13,
+    "username": "sarah_immo_oran",
+    "email": "sarah.oran.estates@gmail.com",
+    "phone_number": "+213561223344",
+    "job": "seller"
+  },
+  {
+    "id": 14,
+    "username": "bilel_tipaza",
+    "email": "bilel.beach@gmail.com",
+    "phone_number": "+213668442211",
+    "job": "consumer"
+  },
+  {
+    "id": 15,
+    "username": "walid_mdaourouch",
+    "email": "walid.mdaourouch@gmail.com",
+    "phone_number": "+213775667788",
+    "job": "consumer"
+  }
+]
