@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3A9ARAT - Smart Search</title>
+    <link rel="stylesheet" href="/frontend/style.css">
+    <link rel="icon" href="/img/3A9ARAT (1)-Photoroom.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <a  class="logo">3A9ARAT</a>
+        </div>
+
+       <nav>
+
+            <button class="navbtn" type="button" id="home-navbtn">
+                <span data-i18n="home">Home</span>
+            </button>
+
+            <button class="navbtn" type="button" id="searchproperty-navbtn">
+                <span data-i18n="searchProperty">Search Property</span>
+            </button>
+
+            <button class="navbtn" type="button" id="map-navbtn">
+                <span data-i18n="map">Map</span>
+            </button>
+
+            <hr>
+
+            <button id="settings" type="button">
+                <img src="/img/setting.png" alt="Settings" class="settings-img">
+            </button>
+
+            <a id="sign" type="button" href="signin.html">
+                <span data-i18n="signIn">Sign in</span>
+            </a>
+
+        </nav>
+    </header>
+    <div style="height:100px"></div>
+    <h1 data-i18n="smartSearch">Smart Search</h1>
+    <p data-i18n="smartSearchDescription">Find your dream property with our smart search feature. Enter your preferences and let us do the work for you!</p>
+    <main>
+        <form id="smart-search-form">
+            <div class="search-informations">
+                <h3 data-i18n="searchInformations">Search Informations</h3>
+                <label for="cities" data-i18n="cities">Cities:</label>
+                <input type="text" id="cities" name="cities" placeholder="Enter cities">
+                <p data-i18n="citiesDescription">Enter the cities you are interested in, separated by commas.</p>
+                <label for="property-type" data-i18n="propertyType">Property Type:</label>
+                <select id="property-type" name="property-type">
+                    <option value="" data-i18n="allTypes">All types</option>
+                    <option value="apartment" data-i18n="apartment">Apartment</option>
+                    <option value="house" data-i18n="house">House</option>
+                    <option value="villa" data-i18n="villa">Villa</option>
+                </select>
+                <p data-i18n="propertyTypeDescription">Select the type of property you are looking for.</p>
+                <label for="area" data-i18n="area">Area:</label>
+                <input type="number" id="area" name="area" placeholder="Enter area">
+                <p data-i18n="areaDescription">Specify the desired area in square meters.</p>
+            </div>
+            <div class="search-settings">
+                <h3 data-i18n="searchSettings">Search Settings</h3>
+                <label for="price-range" data-i18n="priceRange">Price Range:</label>
+                <input type="number" id="price-range" name="price-range" placeholder="Enter price range">
+                <p data-i18n="priceRangeDescription">Specify your desired price range for the property.</p>
+                <nav >
+                    <label for="minimum-ratings" data-i18n="minimumRatings">Minimum Ratings:</label>
+                    <input type="number" id="minimum-ratings" name="minimum-ratings" min="0" max="5" step="0.1" placeholder="Enter minimum ratings">
+                    <p data-i18n="minimumRatingsDescription">Set the minimum rating you require for the property.</p>
+                    <label for="minimum-reviews" data-i18n="reviews">Reviews:</label>
+                    <input type="number" id="minimum-reviews" name="minimum-reviews" placeholder="Enter minimum reviews">
+                    <p data-i18n="reviewsDescription">Specify any specific reviews or feedback you want to consider in your search.</p>
+                </nav>
+                <label for="purpose">Purpose:</label>
+                <select id="property-purpose">
+                    <option value="" data-i18n="both">Both</option>
+                    <option value="buy">buy</option>
+                    <option value="rent">rent</option>
+                </select>
+            </div>
+            <button type="submit" data-i18n="search">Search</button>
+        </form>
+        <div id="results-container" class="results-container">
+                <h5 id="smartSearchTitle">Title</h5>
+                <h5 id="smartSearchWilaya">wilaya</h5>
+                <h5 id="smartSearchPurpose">Purpose</h5>
+                <h5 id="smartSearchType">Type</h5>
+                <h5 id="smartSearchRatings">ratings</h5>
+                <h5 id="smartSearchArea">area</h5>
+                <h5 id="smartSearchReviews">reviews</h5>
+                <h5 id="smartSearchPrice">price</h5>
+            </div>
+        <div id="search-results" class="search-results">
+            <h3 data-i18n="searchResults">Search Results</h3>
+            <h1 id="noResults" style="display: none;">There is no results</h1>
+        </div>
+    </main>
+    <div class="smartSearchMore">
+    <button class="closeSmartSearchMore" type="button">
+        &times;
+    </button>
+
+    <img
+        src="/img/Tour a Charming Queen Anne House in Defiance, Ohio — Photos _ Apartment Therapy.jpg"
+        alt="Property image"
+        id="smartSearchMoreImage"
+    >
+    <div class="smartSearchMoreInfo">
+        <h1 id="smartSearchMoreTitle">Beautiful Villa in Oran</h1>
+        <p id="smartSearchMoreWilaya">
+            Oran
+        </p>
+        <p id="smartSearchMorePurpose">
+            For sale
+        </p>
+        <p id="smartSearchMoreType">
+            Villa
+        </p>
+        <p id="smartSearchMorePrice">
+            25,000,000 DZD
+        </p>
+        <div class="smartSearchMoreRating">
+            <span id="smartSearchMoreRating">4.5</span>
+            <span>★</span>
+            <span id="smartSearchMoreReviews">(32 reviews)</span>
+        </div>
+        <p id="smartSearchMoreDesc">
+            A beautiful villa near the sea with a spacious garden
+            and several bedrooms.
+        </p>
+        <button
+            id="smartSearchMorePage"
+            type="button"
+        >
+            View full property
+        </button>
+
+    </div>
+
+</div>
+
+
+
+    <div class="settings-menu">
+        <nav>
+            <h1 data-i18n="settings">Settings</h1>
+            <button id="exit-settings-menu"><img src="/img/exit.png" alt="exit" ></button>
+        </nav>
+       
+        <hr>
+        <nav>
+        <label for="language" data-i18n="chooseLanguage">choose language</label>
+        <select name="language" id="language">
+            <option value="en" data-i18n="english">English</option>
+            <option value="ar" data-i18n="arabic">Arabic</option>
+            <option value="fr" data-i18n="french">French</option>
+        </select>
+        </nav>
+        <nav>
+        <label for="display" data-i18n="display">Display</label>
+        <select name="display" id="display">
+            <option value="light" data-i18n="light">Light</option>
+            <option value="dark" data-i18n="dark">Dark</option>
+        </select>
+        </nav>
+        <hr>
+        <div class="pfp-settings"><img src="/img/hiii hello.jpg" alt="Profile Picture">
+            <p data-i18n="account">Account</p>
+        </div>
+        
+        <h3>
+            <span data-i18n="switchJob">switch job</span>
+        </h3>
+        <nav id="settings-job-nav">
+            <button data-i18n="seller">seller</button>
+            <button data-i18n="consumer">consumer</button>
+        </nav>
+        <button id="log-out" data-i18n="logOut">Log out</button>
+        
+    </div>
+    <script src="./js/pages.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/smart-search.js"></script>
+</body>
+</html>

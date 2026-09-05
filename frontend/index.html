@@ -62,12 +62,12 @@
 
                 <nav id="property-purpose">
 
-                    <button id="buy" type="button" class="purpose">
+                    <button id="buy" type="button" class="purpose" value="buy">
                         <img src="/img/real-estate.png" alt="buy" id="buyImg">
                         <span data-i18n="buy">Buy</span>
                     </button>
 
-                    <button id="rent" type="button" class="purpose">
+                    <button id="rent" type="button" class="purpose" value="rent">
                         <img src="/img/rent.png" alt="rent" id="rentImg">
                         <span data-i18n="rent">Rent</span>
                     </button>
@@ -82,7 +82,7 @@
                         <span data-i18n="wilaya">Wilaya</span>
                     </label>
 
-                    <select id="wilaya">
+                    <select id="wilaya" required>
 
                         <option value="" data-i18n="allWilayas">
                             All Wilayas
@@ -112,7 +112,7 @@
                         <span data-i18n="propertyType">Property type</span>
                     </label>
 
-                    <select id="property-type">
+                    <select id="property-type" required>
 
                         <option value="">
                             <span data-i18n="allTypes">All types</span>
@@ -147,6 +147,7 @@
                         type="number"
                         id="price"
                         placeholder="Price in DZD" data-i18n-placeholder="priceDzd"
+                        required
                     >
 
                 </div>
@@ -164,6 +165,7 @@
                         type="number"
                         id="area"
                         placeholder="m²" data-i18n-placeholder="squareMeters"
+                        required
                     >
 
                 </div>

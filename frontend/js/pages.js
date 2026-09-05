@@ -144,9 +144,19 @@ if (language) {
     applyLanguage(localStorage.getItem("language") || language.value || "en");
     language.addEventListener("change", () => applyLanguage(language.value));
 }
-const propertySearch=document.getElementById("search-property");
+const propertySearch=document.getElementById("property-search");
+const propertyType=document.getElementById("property-type");
+const propertyWilaya=document.getElementById("wilaya");
+const propertyPrice=document.getElementById("price");
+const propertyArea=document.getElementById("area")
 if(propertySearch){
-    propertySearch.addEventListener("submit", function(){
-        window.location.href=`./search-property.html?search=${document.getElementById("search-property-input").value}`;   
+    propertySearch.addEventListener("submit", function(event){
+        event.preventDefault();
+        localStorage.setItem("currentWilaya" ,propertyWilaya.value);
+        localStorage.setItem("currentType", propertyType.value);
+        localStorage.setItem("currentPrice", propertyPrice.value);
+        localStorage.setItem("currentArea", propertyArea.value);
+        localStorage.setItem("currentPrps", prpsValue)
+        window.location.href="smart-search.html";   
     })
 }

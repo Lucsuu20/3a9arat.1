@@ -8,19 +8,19 @@ const signupForm=document.getElementsByClassName("signup-form")[0];
 function move(){
     if(count%2!==0){
         overlay.style.transform = "translate3d(-100%, 0, 0)";
-        overlay.style.transition = "transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)";
+        overlay.style.transition = "transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)";
         signinForm.style.display="none";
         signupForm.style.display="flex";
-        signupForm.style.animation = "slideIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)";
+        signupForm.style.animation = "slideIn 0.6s cubic-bezier(0.22, 1, 0.36, 1)";
         overlayTitle.textContent="Hello, Friend"
         overlayP.textContent="reate your account and start your journey with us today!";
         overlayBtn.textContent="sign in";
     }
     if(count%2===0){
         overlay.style.transform = "translate3d(0, 0, 0)";
-        overlay.style.transition = "transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)";
+        overlay.style.transition = "transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)";
         signinForm.style.display="flex";
-        signinForm.style.animation = "slideIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)";
+        signinForm.style.animation = "slideIn 0.6s cubic-bezier(0.22, 1, 0.36, 1)";
         signupForm.style.display="none";
         overlayTitle.textContent="welcome back";
         overlayP.textContent="register with your personal details to use all of site features";
